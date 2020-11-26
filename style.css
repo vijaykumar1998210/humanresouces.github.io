@@ -690,7 +690,7 @@ list-style: none;
        
 }
 .content h1{
-font-size:40px;
+font-size:36px;
 line-height: 1.2;
 }
 .content span{
@@ -698,6 +698,7 @@ line-height: 1.2;
 }
 .content p{
     line-height: 1.6;
+    width:300px;
 }
 }
   @media screen and (max-width: 768px){
@@ -757,7 +758,7 @@ line-height: 1.2;
         display: none;
   }
   .back{
-    height: 100vh;
+    height: 110vh;
     background-image: url(hero_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -931,7 +932,23 @@ footer{
     height: 150vh;
     padding: 100px; 
 }
-
+  }
+  @media screen and (max-width: 380px){
+    .content{
+        position:absolute;
+        top:75%;
+        left:142%;
+        transform:translate(-100%,-50%);
+        color:white;
+        z-index:1;
+        text-transform:capitalize;
+          
+    }
+    .content h1{
+        font-size:30px;
+        line-height: 1.3;
+        }
+  }
 
 
 
