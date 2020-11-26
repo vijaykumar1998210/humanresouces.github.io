@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header class="back">
+    <header class="back" id="mainhead">
         <nav class="nav-bar">
             <div class="logo">
                 <h1>human resourcs</h1>
@@ -32,13 +32,12 @@
                 <a href="#">blog</a>
                 <a href="#">contact</a>
             </div>
-            <div class="bars">
-                <i class="fas fa-bars"></i>
+            <div class="bars" onclick="openNav()">
+                <i id="bar1" class="fas fa-bars"></i>
             </div>
 
         </nav>
-
-        <div class="content">
+        <div class="content" id="cont1">
             <h1>We Are Your Partners<br> in <span>human resouces</span></h1>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
                 the blind
@@ -70,7 +69,14 @@
             </div>
         </div>
     </header>
-
+    <div class="sidebar2 " id="side1" >
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">services</a>
+                <a href="#">blog</a>
+                <a href="#">contact</a>
+    </div>
     <section class="agency">
         <div class="agency-content">
             <h1>our agency</h1>
@@ -397,7 +403,15 @@
 
             });
 
+            function openNav() {
+  document.getElementById("side1").style.height = "400px";
+  document.getElementById("cont1").style.marginTop = "400px";
+}
 
+function closeNav() {
+  document.getElementById("side1").style.height = "0";
+  document.getElementById("cont1").style.marginTop = "0";
+}
         </script>
 
 </body>
