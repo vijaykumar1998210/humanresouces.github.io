@@ -752,7 +752,7 @@ line-height: 1.2;
 
   }
 
-  @media screen and (max-width: 412px){
+  @media screen and (max-width: 424px){
     .boxes{
         display: none;
   }
